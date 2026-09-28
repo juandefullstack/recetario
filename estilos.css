@@ -65,3 +65,49 @@ footer {
     color: var(--color-suave);
     font-size: 0.9rem;
 }
+
+/* ===== Listado de recetas ===== */
+.rejilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-tarjeta);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.info {
+    color: var(--color-suave);
+    font-size: 0.9rem;
+}
+
+.boton {
+    margin-top: auto;
+    align-self: flex-start;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
