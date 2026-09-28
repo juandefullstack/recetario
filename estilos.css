@@ -1,0 +1,67 @@
+/* ===== Variables de diseño ===== */
+:root {
+    --color-principal: #c0392b;
+    --color-donfo: #fdf8f3;
+    --color-tarjeta: #ffffff;
+    --color-texto: #2d2a26;
+    --color-suave: #7a716a;
+    --radio: 12px;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Base ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--color-principal);
+}
+
+/* ===== Cabecera ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-principal);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENIDO PRINCIPAL =====*/
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ===== Pie de página ===== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-suave);
+    font-size: 0.9rem;
+}
