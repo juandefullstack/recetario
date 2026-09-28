@@ -111,3 +111,22 @@ footer {
 .boton:hover {
     opacity: 0.9;
 }
+
+/* ===== Página de receta ===== */
+.receta {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--color-tarjeta);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    padding: 2rem;
+}
+
+.receta h2 {
+    margin-top: 0;
+    color: var(--color-principal);
+}
+
+.receta li {
+    margin-bottom: 0.5rem;
+}
